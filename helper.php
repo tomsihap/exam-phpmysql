@@ -72,9 +72,6 @@ function createMiniature($titreAncienneImage, $extension, $dossierEnregistrement
         // On crée la miniature
         imagecopyresampled($destination, $source, 0, 0, 0, 0, $largeur_destination, $hauteur_destination, $largeur_source, $hauteur_source);
 
-        // On enregistre la miniature sous le nom "mini_couchersoleil.jpg"
-        imagejpeg($destination, $cheminDestination);
-
         switch ($extension) {
 
             case 'jpg':
